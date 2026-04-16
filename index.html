@@ -1,127 +1,188 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO -->
-  <title>David Alvarez | Portfolio - Desarrollador</title>
-  <meta name="description" content="Portfolio de David Alvarez, estudiante de Ingeniería Industrial y desarrollador. Proyectos, habilidades y contacto." />
-  <meta name="author" content="David Alvarez" />
-  <link rel="canonical" href="https://tudominio.com/" />
+    <!-- SEO -->
+    <title>David Alvarez | Portfolio - Desarrollador</title>
+    <meta
+      name="description"
+      content="Portfolio de David Alvarez, estudiante de Ingeniería Industrial y desarrollador. Proyectos, habilidades y contacto."
+    />
+    <meta name="author" content="David Alvarez" />
+    <link rel="canonical" href="https://tudominio.com/" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="David Alvarez | Portfolio" />
-  <meta property="og:description" content="Desarrollador y estudiante. Proyectos y contacto." />
-  <meta property="og:type" content="website" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="David Alvarez | Portfolio" />
+    <meta
+      property="og:description"
+      content="Desarrollador y estudiante. Proyectos y contacto."
+    />
+    <meta property="og:type" content="website" />
 
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles.css" />
-</head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav>
+        <h1>David Alvarez</h1>
+        <ul>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+          <button id="themeToggle" aria-label="Cambiar tema">
+            🌙
+          </button>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- HEADER -->
-  <header>
-    <nav>
-      <h1>David Alvarez</h1>
-      <ul>
-        <li><a href="#about">Sobre mí</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#contact">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main>
+      <!-- HERO -->
+      <section id="hero" class="hero-grid hero-animate reveal">
+        <div>
+          <span class="badge">Disponible para proyectos</span>
 
-  <main>
+          <h2>Hola, soy David 👋</h2>
 
-    <!-- HERO -->
-    <section id="hero" class="hero-grid hero-animate reveal">
-      <div>
-        <span class="badge">Disponible para proyectos</span>
+          <p>
+            Desarrollador en formación con enfoque en automatización, IA y
+            desarrollo web.
+          </p>
 
-        <h2>Hola, soy David 👋</h2>
+          <a href="#contact">Contactarme</a>
+        </div>
+      </section>
 
+      <!-- ABOUT -->
+      <section id="about" class="reveal">
+        <h2>Sobre mí</h2>
         <p>
-          Desarrollador en formación con enfoque en automatización, IA y desarrollo web.
+          Soy estudiante de Ingeniería Industrial con conocimientos en
+          programación. Me enfoco en construir proyectos reales y aprender
+          tecnologías modernas.
         </p>
+      </section>
 
-        <a href="#contact">Contactarme</a>
-      </div>
-    </section>
+      <!-- PROJECTS -->
+      <section id="projects">
+        <h2 class="reveal">Proyectos</h2>
 
-    <!-- ABOUT -->
-    <section id="about" class="reveal">
-      <h2>Sobre mí</h2>
-      <p>
-        Soy estudiante de Ingeniería Industrial con conocimientos en programación.
-        Me enfoco en construir proyectos reales y aprender tecnologías modernas.
-      </p>
-    </section>
+        <article class="reveal" style="transition-delay: 0.1s">
+          <h3>Sistema de turnos</h3>
+          <p>
+            Aplicación web para gestión de citas con formulario y backend
+            básico.
+          </p>
+        </article>
 
-    <!-- PROJECTS -->
-    <section id="projects">
-      <h2 class="reveal">Proyectos</h2>
+        <article class="reveal" style="transition-delay: 0.2s">
+          <h3>E-commerce básico</h3>
+          <p>Tienda online con carrito y manejo de productos.</p>
+        </article>
+      </section>
 
-      <article class="reveal" style="transition-delay: 0.1s;">
-        <h3>Sistema de turnos</h3>
-        <p>Aplicación web para gestión de citas con formulario y backend básico.</p>
-      </article>
+      <!-- CONTACT -->
+      <section id="contact" class="reveal">
+        <h2>Contacto</h2>
+        <p>¿Tenés una idea o proyecto? Escribime.</p>
 
-      <article class="reveal" style="transition-delay: 0.2s;">
-        <h3>E-commerce básico</h3>
-        <p>Tienda online con carrito y manejo de productos.</p>
-      </article>
-    </section>
+        <form>
+          <fieldset>
+            <legend>Formulario de contacto</legend>
 
-    <!-- CONTACT -->
-    <section id="contact" class="reveal">
-      <h2>Contacto</h2>
-      <p>¿Tenés una idea o proyecto? Escribime.</p>
+            <label>Nombre</label>
+            <input type="text" required />
 
-      <form>
-        <fieldset>
-          <legend>Formulario de contacto</legend>
+            <label>Email</label>
+            <input type="email" required />
 
-          <label>Nombre</label>
-          <input type="text" required />
+            <label>Mensaje</label>
+            <textarea rows="5" required></textarea>
 
-          <label>Email</label>
-          <input type="email" required />
+            <button type="submit">Enviar</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
 
-          <label>Mensaje</label>
-          <textarea rows="5" required></textarea>
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2026 David Alvarez</p>
+    </footer>
 
-          <button type="submit">Enviar</button>
-        </fieldset>
-      </form>
-    </section>
+    <button id="topBtn">↑</button>
 
-  </main>
+    <!-- Scroll reveal -->
+    <script>
+      const reveals = document.querySelectorAll(".reveal");
 
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2026 David Alvarez</p>
-  </footer>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("active");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
 
-  <!-- Scroll reveal -->
-  <script>
-    const reveals = document.querySelectorAll(".reveal");
+      reveals.forEach((el) => observer.observe(el));
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("active");
-          observer.unobserve(entry.target);
-        }
+      const btn = document.getElementById("topBtn");
+      window.addEventListener("scroll", () => {
+        btn.classList.toggle("show", window.scrollY > 300);
       });
-    }, { threshold: 0.15 });
+      btn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
-    reveals.forEach(el => observer.observe(el));
-  </script>
-
-</body>
+    </script>
+    <script>
+      (function () {
+        const STORAGE_KEY = "theme";
+        const root = document.body;
+      
+        // Detect system preference
+        const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      
+        // Get saved theme
+        const savedTheme = localStorage.getItem(STORAGE_KEY);
+      
+        // Apply initial theme (NO FLASH)
+        if (savedTheme === "dark" || (!savedTheme && systemDark)) {
+          root.classList.add("dark");
+        }
+      
+        // Toggle button
+        const btn = document.getElementById("themeToggle");
+      
+        function updateIcon() {
+          btn.textContent = root.classList.contains("dark") ? "☀️" : "🌙";
+        }
+      
+        updateIcon();
+      
+        btn.addEventListener("click", () => {
+          root.classList.toggle("dark");
+      
+          const isDark = root.classList.contains("dark");
+          localStorage.setItem(STORAGE_KEY, isDark ? "dark" : "light");
+      
+          updateIcon();
+        });
+      
+      })();
+      </script>
+  </body>
 </html>
